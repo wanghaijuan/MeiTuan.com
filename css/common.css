@@ -1,0 +1,83 @@
+/* CSS Document */
+/*--- 清除浮动 ----*/
+/*---text-overflow:ellipsis 超出省略号显示-------*/
+/*--margin:0;padding:0----*/
+/*---wigth-height---*/
+/*---position---*/
+/*---字体样式---*/
+html,
+body {
+  font-size: 50px;
+  height: 100%;
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .28em;
+  line-height: 1;
+  color: #333;
+  background-color: #f0efed;
+}
+a,
+u {
+  text-decoration: none;
+  color: #666;
+  outline: 0;
+}
+em,
+i {
+  font-style: normal;
+  font-weight: normal;
+}
+div,
+ul,
+li,
+dl,
+dt,
+dd {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+fieldset,
+input {
+  border: none;
+}
+img {
+  border: none;
+  display: block;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('http://at.alicdn.com/t/font_1477123867_6878474.eot');
+  /* IE9*/
+  src: url('http://at.alicdn.com/t/font_1477123867_6878474.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('http://at.alicdn.com/t/font_1477123867_6878474.woff') format('woff'), /* chrome、firefox */ url('http://at.alicdn.com/t/font_1477123867_6878474.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('http://at.alicdn.com/t/font_1477123867_6878474.svg#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+.icon {
+  /*此处的字体必须与前面的字体必须一致*/
+  font-family: 'iconfont' !important;
+  color: #FFF;
+  font-size: .32rem;
+  font-style: normal;
+  display: inline-block;
+}

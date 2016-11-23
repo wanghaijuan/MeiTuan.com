@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<title>美团</title>
+		<script src="js/main.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<link href="css/common.css" rel="stylesheet">
+		<link href="css/header.css" rel="stylesheet"/>
+		<link href="css/iconMain.css" rel="stylesheet"/>
+		<link href="css/shoppingGuide.css" rel="stylesheet"/>
+		<link href="css/guess-like.css" rel="stylesheet"/>
+		<link href="css/footer.css" rel="stylesheet"/>
+		<link href="css/swiper.min.css" rel="stylesheet"/>
+	</head>
+	<body ng-app="myApp">
+		
+	<!--AngularJS 控制器 ng-controller-->
+	<div ng-controller="mtController">
+		
+		<!--网页的头部-->
+		<div ng-include="'header.html'"></div>	<!--往页面使用ng-include插入网页头部样式-->
+		
+		<!--网页的icon图标-->
+		<div class="icon-main swiper-container">
+			<div class="icon-wrap swiper-wrapper">
+				<div class="icon-list swiper-slide">
+					<li>
+						<a>
+							<span class="icon food">&#xe611;</span>
+							<span class="icon-desc">美食</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span class="icon movie">&#xe610;</span>
+							<span class="icon-desc">电影</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span class="icon hotel">&#xe617;</span>
+							<span class="icon-desc">酒店</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span class="icon paly">&#xe60f;</span>
+							<span class="icon-desc">休闲娱乐</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span class="icon take-out">&#xe615;</span>
+							<span class="icon-desc">外卖</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span class="icon ktv">&#xe613;</span>
+							<span class="icon-desc">KTV</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span class="icon tourism">&#xe612;</span>
+							<span class="icon-desc">周边游</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span class="icon beauty">&#xe60e;</span>
+							<span class="icon-desc">丽人</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span class="icon fast-food">&#xe614;</span>
+							<span class="icon-desc">小吃快餐</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span class="icon ticket">&#xe616;</span>
+							<span class="icon-desc">机票/火车票</span>
+						</a>
+					</li>
+				</div>
+				<div class="icon-list icon-list2 swiper-slide ">
+					<li>
+						<a>
+							<span class="icon paly">&#xe60f;</span>
+							<span class="icon-desc">休闲娱乐</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span class="icon take-out">&#xe615;</span>
+							<span class="icon-desc">外卖</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span class="icon food">&#xe603;</span>
+							<span class="icon-desc">生活服务</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span class="icon movie">&#xe605;</span>
+							<span class="icon-desc">今日新单</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span class="icon hotel">&#xe606;</span>
+							<span class="icon-desc">旅游</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span class="icon fast-food">&#xe614;</span>
+							<span class="icon-desc">小吃快餐</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span class="icon ticket">&#xe616;</span>
+							<span class="icon-desc">机票/火车票</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span class="icon ktv">&#xe607;</span>
+							<span class="icon-desc">婚纱摄影</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span class="icon tourism">&#xe608;</span>
+							<span class="icon-desc">母婴亲子</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span class="icon beauty">&#xe604;</span>
+							<span class="icon-desc">学习培训</span>
+						</a>
+					</li>
+				</div>
+			</div>
+			<!--小圆点-->
+			<ul class="icon-num swiper-pagination" style="bottom: 0.06rem;"></ul>
+		</div>
+		<!--购物导购-->
+		<div class="shopping-guide">
+			<div class="guide-padding">
+				<div class="left">
+					<a href="#" class="mt">
+						<span class="info">
+							<strong>我们约会吧</strong>
+							<small>恋人家人好朋友</small>
+						</span>
+						<span class="images">
+							<img src="img/1.png"/>
+						</span>
+					</a>
+				</div>
+				<div class="right">
+					<div class="right-top">
+						<a class="mt">
+							<span class="info">
+								<strong>低价超值</strong>
+								<small>十元惠生活</small>
+							</span>
+							<span class="images">
+								<img src="img/2.jpg"/>
+							</span>
+						</a>
+					</div>
+					<div class="right-bottom">
+						<a class="mt">
+							<span class="info">
+								<strong>工作简餐</strong>
+								<small>实惠选择方便</small>
+							</span>
+							<span class="images">
+								<img src="img/3.png"/>
+							</span>
+						</a>
+						<a class="mt">
+							<span class="info">
+								<strong class="famous">名店抢购</strong>
+								<small>距离结束</small>
+							</span>
+							<span class="time-panel">
+								<span class="span-time" id="time-hour">00</span>
+								:<span class="span-time" id="time-min">00</span>
+								:<span class="span-time" id="time-sec">00</span>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--猜你喜欢-->		
+		<div class="guess-like">
+			<article>	
+				<!--列表内容-->
+				<section>
+					<dl class="list swiper-slide">
+						<dt>猜你喜欢</dt>
+						<!--<dd>
+							<a class="mt">
+								<div class="dealcard">
+									免预约
+									<span class="nobooking"></span>
+									图片
+									<div class="dealcard-img">
+										<img src="img/index.png" />
+									</div>
+									文字右边
+									<div class="dealcard-right">
+										<div class="dealcard-brand">正新鸡排</div>
+								        <div class="title">[全国]【官方】正新鸡排尊享版单人餐</div>
+								        <div class="price">
+								            <span class="strong">8.9</span>
+								            <span class="strong-color">元</span>
+								            <span class="tag">新用户1元抢</span>
+									        <span class="line-right">已售9931403</span>
+								        </div>
+									</div>
+								</div>
+							</a>
+						</dd>-->
+					</dl>				
+				</section>
+				<!--加载-->
+				<div class="loading"><img src="img/loading.gif"/></div>	
+				<!--列表底部-->
+				<div class="guess-bottom">
+					<a href="#" class="mt">
+						<div class="more">
+							查看全部团购
+						</div>
+					</a>
+				</div>
+				<div class="swiper-scrollbar"></div>
+			</article>
+		</div>	
+			
+		<!--网页底部-->
+		<div ng-include="'footer.html'"></div>	<!--往页面使用ng-include插入网页底部样式-->
+		
+	</div>	
+	
+		<script>
+			// icon 的手机滑动样式
+			var swiper = new Swiper('.icon-main', {
+		        pagination: '.icon-num',
+		        paginationClickable: true
+		    });
+		    
+		    // AngularJS
+		    var app = angular.module("myApp",[]);
+		    app.controller("mtController",function($scope){
+
+		    })
+		</script>
+	</body>
+	
+</html>

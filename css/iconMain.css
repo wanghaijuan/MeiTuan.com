@@ -1,0 +1,84 @@
+.icon-main {
+  width: 100%;
+  position: relative;
+}
+.icon-main .icon-wrap {
+  margin: 0;
+  border-bottom: 1px solid #DDD8CE;
+  font-size: inherit;
+  font-weight: 400;
+  position: relative;
+  height: 3.6rem;
+}
+.icon-main .icon-wrap .swiper-slide {
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.icon-main .icon-wrap .icon-list {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+.icon-main .icon-wrap .icon-list li {
+  width: 20%;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+}
+.icon-main .icon-wrap .icon-list li a {
+  display: inline-block;
+  padding: 0.2rem 0;
+}
+.icon-main .icon-wrap .icon-list li a .icon {
+  display: block;
+  margin: auto auto 0.14rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 10rem;
+  text-align: center;
+  line-height: 0.7rem;
+  font-size: 0.5rem;
+  color: #fff;
+}
+.icon-main .icon-wrap .icon-list li a .icon::before {
+  text-align: center;
+  line-height: .8rem;
+  font-size: .5rem;
+  color: #fff;
+}
+.icon-main .icon-wrap .icon-list li a .icon-desc {
+  text-align: center;
+  font-size: 0.24rem;
+  color: #666;
+}
